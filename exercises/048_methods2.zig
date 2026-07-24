@@ -38,6 +38,9 @@ pub fn main() void {
     elephantA.tail = &elephantB;
     elephantB.tail = &elephantC;
 
+    // optional i guess
+    elephantC.tail = null;
+
     visitElephants(&elephantA);
 
     std.debug.print("\n", .{});
@@ -54,7 +57,7 @@ fn visitElephants(first_elephant: *Elephant) void {
 
         // This gets the next elephant or stops:
         // which method do we want here?
-        e = if (e.hasTail()) e.??? else break;
+        e = if (e.hasTail()) e.getTail() else break;
     }
 }
 

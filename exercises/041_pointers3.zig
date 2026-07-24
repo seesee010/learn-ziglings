@@ -1,4 +1,3 @@
-//
 // The tricky part is that the pointer's mutability (var vs const) refers
 // to the ability to change what the pointer POINTS TO, not the ability
 // to change the VALUE at that location!
@@ -31,7 +30,7 @@ pub fn main() void {
 
     // Please define pointer "p" so that it can point to EITHER foo or
     // bar AND change the value it points to!
-    ??? p: ??? = undefined;
+    var p: *u8 = undefined;
 
     p = &foo;
     p.* += 1;

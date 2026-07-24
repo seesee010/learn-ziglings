@@ -28,9 +28,10 @@ pub fn main() void {
 
     var num2: u8 = undefined;
 
+
     // Please make num2 equal 5 using num1_pointer!
     // (See the "cheatsheet" above for ideas.)
-    num2 = ???;
+    num2 = num1_pointer.*;
 
     std.debug.print("num1: {}, num2: {}\n", .{ num1, num2 });
 }
